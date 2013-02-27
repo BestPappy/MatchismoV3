@@ -18,6 +18,8 @@
 		78932D8A16DD5E5000DDDE41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78932D8916DD5E5000DDDE41 /* Default-568h@2x.png */; };
 		78932D8D16DD5E5000DDDE41 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78932D8B16DD5E5000DDDE41 /* MainStoryboard.storyboard */; };
 		78932D9016DD5E5000DDDE41 /* MatchismoV3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78932D8F16DD5E5000DDDE41 /* MatchismoV3ViewController.m */; };
+		78932D9916DD5F0600DDDE41 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 78932D9816DD5F0600DDDE41 /* Card.m */; };
+		78932D9C16DD65D800DDDE41 /* MatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 78932D9B16DD65D800DDDE41 /* MatchResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		78932D8C16DD5E5000DDDE41 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		78932D8E16DD5E5000DDDE41 /* MatchismoV3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchismoV3ViewController.h; sourceTree = "<group>"; };
 		78932D8F16DD5E5000DDDE41 /* MatchismoV3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoV3ViewController.m; sourceTree = "<group>"; };
+		78932D9716DD5F0600DDDE41 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		78932D9816DD5F0600DDDE41 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		78932D9A16DD65D800DDDE41 /* MatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchResult.h; sourceTree = "<group>"; };
+		78932D9B16DD65D800DDDE41 /* MatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 				78932D8B16DD5E5000DDDE41 /* MainStoryboard.storyboard */,
 				78932D8E16DD5E5000DDDE41 /* MatchismoV3ViewController.h */,
 				78932D8F16DD5E5000DDDE41 /* MatchismoV3ViewController.m */,
+				78932D9616DD5E5D00DDDE41 /* Model */,
 				78932D7A16DD5E5000DDDE41 /* Supporting Files */,
 			);
 			path = MatchismoV3;
@@ -105,6 +112,17 @@
 				78932D8916DD5E5000DDDE41 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78932D9616DD5E5D00DDDE41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78932D9716DD5F0600DDDE41 /* Card.h */,
+				78932D9816DD5F0600DDDE41 /* Card.m */,
+				78932D9A16DD65D800DDDE41 /* MatchResult.h */,
+				78932D9B16DD65D800DDDE41 /* MatchResult.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +195,8 @@
 				78932D8016DD5E5000DDDE41 /* main.m in Sources */,
 				78932D8416DD5E5000DDDE41 /* MatchismoV3AppDelegate.m in Sources */,
 				78932D9016DD5E5000DDDE41 /* MatchismoV3ViewController.m in Sources */,
+				78932D9916DD5F0600DDDE41 /* Card.m in Sources */,
+				78932D9C16DD65D800DDDE41 /* MatchResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
