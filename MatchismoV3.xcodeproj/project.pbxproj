@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35FA9D1E16DF686B00FC685F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9D1D16DF686B00FC685F /* README.txt */; };
+		35FA9D2116DF6C9D00FC685F /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9D2016DF6C9D00FC685F /* PlayingCard.m */; };
 		78932D7416DD5E5000DDDE41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78932D7316DD5E5000DDDE41 /* UIKit.framework */; };
 		78932D7616DD5E5000DDDE41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78932D7516DD5E5000DDDE41 /* Foundation.framework */; };
 		78932D7816DD5E5000DDDE41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78932D7716DD5E5000DDDE41 /* CoreGraphics.framework */; };
@@ -23,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35FA9D1D16DF686B00FC685F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		35FA9D1F16DF6C9D00FC685F /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		35FA9D2016DF6C9D00FC685F /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		78932D7016DD5E5000DDDE41 /* MatchismoV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchismoV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78932D7316DD5E5000DDDE41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78932D7516DD5E5000DDDE41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +67,7 @@
 		78932D6716DD5E5000DDDE41 = {
 			isa = PBXGroup;
 			children = (
+				35FA9D1D16DF686B00FC685F /* README.txt */,
 				78932D7916DD5E5000DDDE41 /* MatchismoV3 */,
 				78932D7216DD5E5000DDDE41 /* Frameworks */,
 				78932D7116DD5E5000DDDE41 /* Products */,
@@ -121,6 +127,8 @@
 				78932D9816DD5F0600DDDE41 /* Card.m */,
 				78932D9A16DD65D800DDDE41 /* MatchResult.h */,
 				78932D9B16DD65D800DDDE41 /* MatchResult.m */,
+				35FA9D1F16DF6C9D00FC685F /* PlayingCard.h */,
+				35FA9D2016DF6C9D00FC685F /* PlayingCard.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +190,7 @@
 				78932D8816DD5E5000DDDE41 /* Default@2x.png in Resources */,
 				78932D8A16DD5E5000DDDE41 /* Default-568h@2x.png in Resources */,
 				78932D8D16DD5E5000DDDE41 /* MainStoryboard.storyboard in Resources */,
+				35FA9D1E16DF686B00FC685F /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +206,7 @@
 				78932D9016DD5E5000DDDE41 /* MatchismoV3ViewController.m in Sources */,
 				78932D9916DD5F0600DDDE41 /* Card.m in Sources */,
 				78932D9C16DD65D800DDDE41 /* MatchResult.m in Sources */,
+				35FA9D2116DF6C9D00FC685F /* PlayingCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +329,7 @@
 				78932D9516DD5E5000DDDE41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
