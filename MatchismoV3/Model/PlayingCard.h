@@ -21,18 +21,29 @@
 // See rankAsString below...
 @property (nonatomic) NSUInteger rank;
 
+// If these properties are zero, then constants defined in implementation will be used.
+@property (nonatomic) int rankMatchPoints;
+@property (nonatomic) int suitMatchPoints;
+@property (nonatomic) int mismatchPenalty;
+
 // Instance method to convert our suit into one of the "validSuits".
 - (NSString *) suitAsString;
 
 // Instance method to convert our rank into one of the "validRanks".
 - (NSString *) rankAsString;
 
+// Convience method allowing caller to set values awarded or penalized which override the defailts
+- (MatchResult *) matchWithScoringValues:(NSArray *)otherCards
+                         rankMatchPoints:(NSInteger)rmp
+                         suitMatchPoints:(NSInteger)smp
+                         mismatchPenalty:(NSInteger)mmp;
+
 // A class method that just returns an array containing the
 // 4 special characters representing the suits
 + (NSArray *) validSuits;
 
-// A class method that just returns an arral containing the
-// 13 characters used to represent our rank as a string.
+// A class method that just returns an array containing the
+// 13 strings used to represent our rank as a string.
 + (NSArray *) validRanks;
 
 @end
