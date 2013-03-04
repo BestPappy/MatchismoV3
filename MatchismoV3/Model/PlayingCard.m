@@ -10,7 +10,7 @@
 
 @implementation PlayingCard
 
-// Default values used only if corresponding properties are zero.
+// Default values to be used only if corresponding properties are zero.
 #define RANK_MATCH_POINTS 1;
 #define SUIT_MATCH_POINTS 4;
 #define MISMATCH_PENALTY -1;
@@ -42,25 +42,12 @@
             
             // Now look for matching attributes and award points or penalty as appropriate
             if (otherCard.suit == self.suit) {
-                if (self.suitMatchPoints == 0) { // if zero use the constant
-                    result.pointsAwarded += SUIT_MATCH_POINTS;
-                } else {
-                    result.pointsAwarded += self.suitMatchPoints;
-                }
+                result.pointsAwarded += (self.suitMatchPoints) ? self.suitMatchPoints : SUIT_MATCH_POINTS;
             } else if (otherCard.rank == self.rank) {
-                if (self.rankMatchPoints == 0) { // if zero use the constant
-                    result.pointsAwarded += RANK_MATCH_POINTS;
-                } else {
-                    result.pointsAwarded += self.rankMatchPoints;
-                }
+                result.pointsAwarded += (self.rankMatchPoints) ? self.rankMatchPoints : RANK_MATCH_POINTS;
             } else {
-                if (self.mismatchPenalty == 0) { // if zero use the constant
-                    result.pointsAwarded += MISMATCH_PENALTY;
-                } else {
-                    result.pointsAwarded += self.mismatchPenalty;
-                }
+                result.pointsAwarded += (self.mismatchPenalty) ? self.mismatchPenalty : MISMATCH_PENALTY;
             }
-            // ++++++++ add code supporting properties ++++++++++++++++++++++++++++++
 
         }
         
@@ -75,7 +62,7 @@
     return result;
 }
 
-// Convenience method allowing caller to pass award/penalty values and call us at the same time.
+// Convenience method allowing caller to pass award/penalty values and call "match" method at the same time.
 - (MatchResult *) matchWithScoringValues:(NSArray *)otherCards
                          rankMatchPoints:(NSInteger)rmp
                          suitMatchPoints:(NSInteger)smp
