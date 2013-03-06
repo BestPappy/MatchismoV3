@@ -2,4 +2,10 @@ I decided to start with a clean slate for Homework Assignment 3 of Stanford's CS
 
 I'll copy in the stuff I can use from previous assignments and make mods as I go. This is a LEARNING EXERCISE after all!
 
+
+
+Wednesday, Mar 6 - Copied in the CardMatchingGame class and started updating it. Needs more work...
+
+
+
 ----Ron
